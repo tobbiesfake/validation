@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+.app{
+    background-color: #fff;
+    display: flex;
+    height: 30rem;
+    padding: 4rem 6rem;
+    border-radius: 1rem;
+    box-shadow: 0 .4rem .6rem .2rem rgba(0,0,0,15%)
+}
+
+.app > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form{
+    margin-right: 6rem;
+}
+.form > h1 {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+.form-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.form-label{
+    color: rgb(58, 46, 46);
+    position: absolute;
+}
+.form-control{
+    font-family: 'Poppins';
+    font-weight: 400;
+    width: 18rem;
+    padding: 0.4rem 0;
+    padding-left: 1.8rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+.form-message{
+    position: absolute;
+    top: 85%;
+    left: 1.8rem;
+    color: red;
+}
+
+.form-group > input[type=checkbox]{
+    margin-right: 1rem;
+}
+.form-group > p {
+    line-height: 2rem;
+    font-weight: 300;
+    font-size: .7rem;
+}
+.form-group > p > span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+form > button{
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 8rem;
+    padding: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #6dabe4;
+    cursor: not-allowed;
+}
+
+button.allowed{
+    background-color: #3f8ad0;
+    cursor: pointer;
+}
+
+
+
+.sigin-image{
+    justify-content: space-around;
+    align-items: center;
+}
+.sigin-image > a {
+    color: black;
+    font-size: .85rem;
+    font-weight: 400;
+
+}

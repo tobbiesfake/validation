@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- ICONs -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.min.css">
+
+    <!-- FONTs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <form action="" method="post" class="form" id="register-form">
+            <h1>Sign up</h1>
+            <div class="form-group">
+                <label for="fullname" class="form-label"><i class="fa-solid fa-user"></i></label>
+                <input id="fullname" name="fullname" rules="required" type="text" class="form-control" placeholder="Your Name">
+                <p class="form-message"></p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"><i class="fa-solid fa-envelope"></i></label>
+                <input id="email" name="email" rules="required|email" type="text" class="form-control" placeholder="Your Email">
+                <p class="form-message"></p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"><i class="fa-solid fa-lock"></i></label>
+                <input id="password" name="password" rules="required|min:6" type="password" class="form-control" placeholder="Password">
+                <p class="form-message"></p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"><i class="fa-solid fa-unlock"></i></label>
+                <input id="confirm-password" name="confirm-password" type="password" rules="required|confirm" class="form-control" placeholder="Confirm your password">
+                <p class="form-message"></p>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="agree-btn"><p>I agree all statements in <span>Terms of service</span></p>
+            </div>
+            
+    
+            <button id="submit-btn">Register</button>
+        </form>
+        <div class="sigin-image">
+            <figure>
+                <img src="./assets/signin-image.jpg" alt="signin-image">
+            </figure>
+            <a href="">I am already member</a>
+        </div>
+    </div>
+    <script src="./validation.js"></script>
+    <script>
+        Validator('#register-form');
+    </script>
+</body>
+</html>
