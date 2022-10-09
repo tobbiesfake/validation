@@ -1,5 +1,5 @@
 # Validation Form
-## Validate a form with JS
+## Validate a form with **my own external Javascript Library**
 ### Features
 - Name : Required
 - Email : Required | Email regex
